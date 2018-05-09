@@ -1,0 +1,10 @@
+[Unit]
+Description=manage-client
+
+[Service]
+ExecStart=/bin/bash /opt/manage/run.sh
+WatchdogSec=20
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
